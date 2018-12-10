@@ -1,0 +1,103 @@
+/************************
+universal styling
+************************/
+* {
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+ul { padding: 0; }
+
+li { list-style: none; }
+
+a {text-decoration: none}
+
+
+/************************
+Body
+************************/
+
+/************************
+Mobile Nav Bar
+************************/
+.collapsible-nav-links {
+    display: none;
+}
+
+
+
+
+
+/************************
+Media Queries
+************************/
+@media screen and (min-width: 540px){
+    .mobile {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************
+universal styling
+************************/
+
+
+
+
+
+
+
+
+
+
+
+
+/************************
+universal styling
+************************/
+
+
+
+
+
+
+
+
+
+
+
+
+/************************
+universal styling
+************************/
+
+
+
+
+
+
+
+
+
+
+
+
+/************************
+universal styling
+************************/

@@ -2,9 +2,176 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
     <title>Christopher Caldwell</title>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
-<body>
+<header class="mobile">
+    <div class="row mobile-menu-icon">
+        <div class="ion-navicon-round"/>
+    </div>
+    <div class="collapsible-nav-links">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Connect</a></li>
+        </ul>
+    </div>
+</header>
+<header class="medium-nav">
+    <div class="row">
+        <div class="col span-1-of-2"></div>
+        <div class="col span-1-of-2">
+            <div class="col span-1-of-3">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Connect</a></li>
 
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+<div>
+    <div class="intro">
+        <div class="header">
+            <h1>Establish Your</h1>
+            <h1>Virtual Identity</h1>
+        </div>
+        <div>
+            <p>My name is Christopher Caldwell. I am a web developer based in San Antonio, TX. My passion is to bring
+                your ideas to life through user interfaces, enhancing the overall user experience</p>
+        </div>
+        <div>
+            <div class="button-container">
+                <div class="col span-1-of-2 navigate-button-container">
+                    <button></button>
+                </div>
+                <div class="col span-1-of-2 navigate-button-container">
+                    <button></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="about">
+        <div class="row about-intro">
+            <p>Just like every other developer, I know the basics well. Hover over something shiny below to see why I’m
+                different</p>
+        </div>
+        <div class="row language-card-container">
+            <div class="col span-1-of-4" id="html-card">
+                <div>
+                    <img src="" alt="html">
+                </div>
+                <div class="language-text">
+                    <p>Not a lot to distinguish here, but hear me out</p>
+                    <ul>
+                        <li>Clean, structured code</li>
+                        <li>Planned out in advance for optimal layout</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="css-card">
+                <div>
+                    <img src="" alt="css">
+                </div>
+                <div class="language-text">
+                    <p>Every site meets your needs. Custom layouts, different views for mobile, tablet, and desktop</p>
+                    <ul>
+                        <li>Highly skilled i the hot CSS libraries, Bootstrap and Materialize</li>
+                        <li>Passionate about the ability of all users to be able to navigate around the content you want
+                            to show. Even Grandma Josephine
+                        </li>
+                        <li>Your vision becomes my mission</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="js-card">
+                <div>
+                    <img src="" alt="js">
+                </div>
+                <div class="language-text">
+                    <p>Make your site zig, zag, and everything in between</p>
+                    <ul>
+                        <li>Dropdown menus, rotating slideshows, you name it</li>
+                        <li>Customizable movability. You tell me what you want to happen, and it will</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="react-card">
+                <div>
+                    <img src="" alt="react-js">
+                </div>
+                <div class="language-text">
+                    <p>The future has arrived. If you need a simple or complex User Interface, let me at it</p>
+                    <ul>
+                        <li>Proficient with many state managers such as <a href="https://redux.js.org/">Redux</a>, <a
+                                href="https://facebook.github.io/flux/docs/overview.html">Flux</a> , and <a
+                                href="https://mobx.js.org/">MobX</a></li>
+                        <li>Careful component selection and re-usability. <span>Translation:</span> I reuse code to fit
+                            your needs and you <strong>pay less.</strong></li>
+                        <li>Stable, bulletproof interaction. If you're expecting the shopping cart to update, it will
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row language-card-container">
+            <div class="col span-1-of-2" id="java-card">
+                <div>
+                    <img src="" alt="jave">
+                </div>
+                <div class="language-text">
+                    <p>I wish I knew anything about Java</p>
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="projects">
+        <div class="row project-header">
+            <div>
+                <p>Finally you can see for yourself what I can bring to your project</p>
+            </div>
+            <div class="row project-display-container">
+                <div class="project-display col-span-1-of-3">
+                    <div class="display-header">
+                        <h1>Project</h1>
+                    </div>
+                    <div class="display-description">
+                        <p>Stuff about what i do</p>
+                    </div>
+                    <div class="display-img">
+                        <img src="" alt="project-preview">
+                    </div>
+                    <div class="display buttons">
+                        <div class="hosted">
+                            <button><a href="" target="_blank">Hosted Version</a></button>
+                        </div>
+                        <div class="github">
+                            <button><a href="" target="_blank">Dive into the code</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="js/personal.js"></script>
 </body>
 </html>
