@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <title>Christopher Caldwell</title>
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -18,7 +19,7 @@
         <div class="ion-navicon-round"/>
     </div>
     <div class="collapsible-nav-links">
-        <ul>
+        <ul class="navigation-links">
             <li><a href="">Home</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Projects</a></li>
@@ -26,102 +27,127 @@
         </ul>
     </div>
 </header>
-<header class="medium-nav">
-    <div class="row">
-        <div class="col span-1-of-2"></div>
-        <div class="col span-1-of-2">
-            <div class="col span-1-of-3">
-                <ul>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Connect</a></li>
 
-                </ul>
-            </div>
-        </div>
-    </div>
-</header>
+
 <body>
-<div>
+<main>
+    <!--Section Divider-->
     <div class="intro">
-        <div class="header">
-            <h1>Establish Your</h1>
-            <h1>Virtual Identity</h1>
-        </div>
-        <div>
-            <p>My name is Christopher Caldwell. I am a web developer based in San Antonio, TX. My passion is to bring
-                your ideas to life through user interfaces, enhancing the overall user experience</p>
-        </div>
-        <div>
-            <div class="button-container">
-                <div class="col span-1-of-2 navigate-button-container">
-                    <button></button>
+        <header class="medium-nav">
+            <div class="row">
+                <div class="col navigation-links-container">
+                    <ul class="navigation-links">
+                        <li><a href="">About</a></li>
+                        <li><a href="">Projects</a></li>
+                        <li><a href="">Connect</a></li>
+                    </ul>
                 </div>
-                <div class="col span-1-of-2 navigate-button-container">
-                    <button></button>
+            </div>
+        </header>
+        <div class="container header-container">
+            <div class="header-text">
+                <h1>Establish Your Virtual Identity </h1>
+            </div>
+            <div>
+                <p class="header-text p-header-text">Hello! I'm Christopher Caldwell, a web developer based in San
+                    Antonio, TX.
+                    <br>My passion is to bring your ideas to life online. Let's make it happen</p>
+            </div>
+            <div class="button-container">
+                <div class="navigate-container">
+                    <button class="btn btn-primary"><a href="">Find out more</a></button>
                 </div>
             </div>
 
+
         </div>
     </div>
+    <!--Section Divider-->
     <div class="about">
-        <div class="row about-intro">
-            <p>Just like every other developer, I know the basics well. Hover over something shiny below to see why I’m
-                different</p>
-        </div>
-        <div class="row language-card-container">
-            <div class="col span-1-of-4" id="html-card">
-                <div>
-                    <img src="" alt="html">
+        <div class="container">
+            <div class="about-intro">
+                <h3>
+                    Just like every other developer, I know the basics well.
+                    <br>Click something shiny below to see why
+                    I’m
+                    different
+                </h3>
+
+            </div>
+
+            <div class="row language-card-container">
+                <div class="col span-1-of-4" id="html-card">
+                    <h5 class="name-header">HTML</h5>
+                    <div class="logo-container html-dropdown">
+                        <img src="images/html.png" class="language-logo" id="html-img" alt="html">
+                    </div>
+
                 </div>
-                <div class="language-text">
+                <div class="col span-1-of-4" id="css-card">
+                    <h5 class="name-header css-dropdown">CSS</h5>
+                    <div class="logo-container css-dropdown">
+                        <img src="images/css.png" class="language-logo" id="css-img" alt="css">
+                    </div>
+
+                </div>
+                <div class="col span-1-of-4" id="js-card">
+                    <h5 class="name-header js-dropdown">JavaScript</h5>
+                    <div class="logo-container js-dropdown">
+                        <img src="images/js.png" class="language-logo" id="js-img" alt="js">
+                    </div>
+                </div>
+                <div class="col span-1-of-4" id="react-card">
+                    <h5 class="name-header react-dropdown">React</h5>
+                    <div class="logo-container react-dropdown" id="react-container">
+                        <img src="images/react.png" id="react-img" alt="react-js">
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="language-text html-text">
+                    <h4>The skeleton of any website</h4>
                     <p>Not a lot to distinguish here, but hear me out</p>
                     <ul>
                         <li>Clean, structured code</li>
                         <li>Planned out in advance for optimal layout</li>
                     </ul>
                 </div>
-            </div>
-            <div class="col span-1-of-4" id="css-card">
-                <div>
-                    <img src="" alt="css">
-                </div>
-                <div class="language-text">
-                    <p>Every site meets your needs. Custom layouts, different views for mobile, tablet, and desktop</p>
+                <div class="language-text css-text">
+                    <h4>CSS makes things easy on the eyes. The skin of a website</h4>
+                    <p>Every site meets your needs. Custom layouts, different views for mobile, tablet, and
+                        desktop</p>
                     <ul>
-                        <li>Highly skilled i the hot CSS libraries, Bootstrap and Materialize</li>
-                        <li>Passionate about the ability of all users to be able to navigate around the content you want
+                        <li>Highly skilled in the hot CSS libraries, Bootstrap and Materialize</li>
+                        <li>Passionate about the ability of all users to be able to navigate around the content you
+                            want
                             to show. Even Grandma Josephine
                         </li>
                         <li>Your vision becomes my mission</li>
                     </ul>
                 </div>
-            </div>
-            <div class="col span-1-of-4" id="js-card">
-                <div>
-                    <img src="" alt="js">
-                </div>
-                <div class="language-text">
+                <div class="language-text js-text">
+                    <h4>Most things you see moving on a website make use of Javascript to add interactivity</h4>
                     <p>Make your site zig, zag, and everything in between</p>
                     <ul>
                         <li>Dropdown menus, rotating slideshows, you name it</li>
                         <li>Customizable movability. You tell me what you want to happen, and it will</li>
                     </ul>
                 </div>
-            </div>
-            <div class="col span-1-of-4" id="react-card">
-                <div>
-                    <img src="" alt="react-js">
-                </div>
-                <div class="language-text">
+                <div class="language-text react-text" id="react-text">
+                    <h4>Lots of moving parts and changes coming together to create quick, minimal load time
+                        application</h4>
                     <p>The future has arrived. If you need a simple or complex User Interface, let me at it</p>
                     <ul>
-                        <li>Proficient with many state managers such as <a href="https://redux.js.org/">Redux</a>, <a
-                                href="https://facebook.github.io/flux/docs/overview.html">Flux</a> , and <a
-                                href="https://mobx.js.org/">MobX</a></li>
-                        <li>Careful component selection and re-usability. <span>Translation:</span> I reuse code to fit
+                        <li>Proficient with many state managers such as <a href="https://redux.js.org/">Redux</a>,
+                            <a
+                                    href="https://facebook.github.io/flux/docs/overview.html">Flux</a> , and <a
+                                    href="https://mobx.js.org/">MobX</a></li>
+                        <li>Careful component selection and re-usability. <span>Translation:</span> I reuse code to
+                            fit
                             your needs and you <strong>pay less.</strong></li>
-                        <li>Stable, bulletproof interaction. If you're expecting the shopping cart to update, it will
+                        <li>Stable, bulletproof interaction. If you're expecting the shopping cart to update, it
+                            will
                         </li>
                     </ul>
                 </div>
@@ -130,7 +156,7 @@
         <div class="row language-card-container">
             <div class="col span-1-of-2" id="java-card">
                 <div>
-                    <img src="" alt="jave">
+                    <img src="" alt="java">
                 </div>
                 <div class="language-text">
                     <p>I wish I knew anything about Java</p>
@@ -141,36 +167,58 @@
             </div>
         </div>
     </div>
+    </div>
+    <!--Section Divider-->
     <div class="projects">
-        <div class="row project-header">
-            <div>
-                <p>Finally you can see for yourself what I can bring to your project</p>
+        <div class="container">
+            <div class="row project-header-container">
+                <h3 class="project-header">See for yourself what I can bring to your project</h3>
             </div>
             <div class="row project-display-container">
-                <div class="project-display col-span-1-of-3">
-                    <div class="display-header">
-                        <h1>Project</h1>
+                <div class="card col span-1-of-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Star Wars: Armada Deck Builder</h5>
+                        <p class="card-text">Card building application in which you can choose from a deck and build
+                            your own space ship fleet</p>
+                        <img class="card-img-top" src="" alt="preview">
                     </div>
-                    <div class="display-description">
-                        <p>Stuff about what i do</p>
-                    </div>
-                    <div class="display-img">
-                        <img src="" alt="project-preview">
-                    </div>
-                    <div class="display buttons">
-                        <div class="hosted">
-                            <button><a href="" target="_blank">Hosted Version</a></button>
-                        </div>
-                        <div class="github">
-                            <button><a href="" target="_blank">Dive into the code</a></button>
-                        </div>
+                    <div class="card-body">
+                        <a href="#" target="_blank" class="card-link">Hosted</a>
+                        <a href="https://github.com/caldwell619/armada-builder-react" target="_blank"
+                           class="card-link">Github</a>
                     </div>
                 </div>
+                <div class="card col span-1-of-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card's content.</p>
+                        <img class="card-img-top" src="" alt="preview">
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Hosted</a>
+                        <a href="#" class="card-link">Github</a>
+                    </div>
+                </div>
+                <div class="card col span-1-of-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card's content.</p>
+                        <img class="card-img-top" src="" alt="preview">
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Hosted</a>
+                        <a href="#" class="card-link">Github</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 
-</div>
+    </div>
+</main>
 
 <script type="text/javascript" src="js/personal.js"></script>
 </body>

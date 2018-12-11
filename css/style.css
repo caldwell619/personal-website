@@ -6,13 +6,20 @@ universal styling
     font-size: 18px;
 }
 
-ul { padding: 0; }
+ul {
+    padding: 0;
+    margin: 0;
+}
 
 li { list-style: none; }
 
 a {text-decoration: none}
 
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
+/*React color: 61dafb*/
 /************************
 Body
 ************************/
@@ -23,10 +30,172 @@ Mobile Nav Bar
 .collapsible-nav-links {
     display: none;
 }
+.about-intro {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.intro {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.73)), url("../images/matrix.jpg");
+    background-size: cover;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation-links li {
+    display: inline-block;
+}
 
 
 
 
+/************************
+Medium Nav
+************************/
+.medium-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+.navigation-links-container {
+    margin-top: 30px;
+}
+
+.navigation-links li a {
+    color: rgb(210, 230, 210);
+    font-size: 130%;
+    margin: 0 30px;
+}
+.button-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+.navigate-container a {
+    color: rgb(210, 230, 210);
+    font-size: 130%;
+}
+.btn-primary {
+    transition: all 0.6s;
+}
+.btn-primary:hover
+
+.btn-primary:active {
+    transform: scale(.9);
+}
+
+
+/************************
+Intro Header
+************************/
+.header-text {
+    color: rgb(210, 230, 210);
+    margin-bottom: 5vh;
+}
+.header-text > h1 {
+    font-size: 70px;
+}
+.navigate-button-container {
+    display: inline-block;
+}
+.p-header-text {
+    font-size: 110%;
+}
+.header-container {
+    text-align: center;
+}
+
+
+
+/************************
+About
+************************/
+.about {
+    background-color: #343434;
+    color: rgb(210, 230, 210);
+    /*height: 70vh;*/
+}
+.about-intro {
+    padding-top: 5vh;
+}
+.shown {
+    width: 100%;
+    display: block;
+}
+.language-card-container {
+    justify-content: center;
+}
+
+
+
+/************************
+Projects
+************************/
+.projects {
+    background-color: #79abd3;
+}
+.project-header {
+    color: rgb(221, 237, 221);
+}
+.project-header-container {
+    padding-top: 5vh;
+    display: flex;
+    justify-content: center;
+}
+.card {
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.25);
+}
+.card-text {
+    font-size: 16px;
+}
+
+
+/************************
+Logo Images
+************************/
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+/*****
+HTML
+*****/
+.language-logo {
+    height: 114px;
+    transition: all 0.4s;
+}
+.language-logo:hover {
+    transform: scale(1.2);
+}
+.language-text {
+    display: none;
+}
+.name-header {
+    text-align: center;
+}
+
+
+/*****
+React
+*****/
+#react-img {
+    height: 150px;
+    margin:-60px 0 0 -60px;
+    -webkit-animation:spin 10s linear infinite;
+    -moz-animation:spin 10s linear infinite;
+    animation:spin 10s linear infinite;
+    transition: all 0.3s;
+    margin: 0 auto;
+}
+#react-img:hover {
+    -webkit-animation:spin 2s linear infinite;
+    -moz-animation:spin 2s linear infinite;
+    animation:spin 2s linear infinite;
+}
 
 /************************
 Media Queries
@@ -37,6 +206,16 @@ Media Queries
     }
 }
 
+@media screen and (min-width: 1500px) {
+    .container {
+        max-width: 1340px;
+    }
+}
+@media screen and (min-width: 1900px) {
+    .container {
+        max-width: 1740px;
+    }
+}
 
 
 
