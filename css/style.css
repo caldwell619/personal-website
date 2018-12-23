@@ -115,7 +115,7 @@ About
 .about {
     background-color: #343434;
     color: rgb(210, 230, 210);
-    /*height: 70vh;*/
+    padding-bottom: 5vh;
 }
 .about-intro {
     padding-top: 5vh;
@@ -126,6 +126,9 @@ About
 }
 .language-card-container {
     justify-content: center;
+}
+.language-text {
+    padding-bottom: 10vh;
 }
 
 
@@ -145,7 +148,8 @@ Projects
     justify-content: center;
 }
 .card {
-    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.25);
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
 }
 .card-text {
     font-size: 16px;
@@ -167,6 +171,7 @@ HTML
 .language-logo {
     height: 114px;
     transition: all 0.4s;
+    cursor: pointer;
 }
 .language-logo:hover {
     transform: scale(1.2);
@@ -190,11 +195,62 @@ React
     animation:spin 10s linear infinite;
     transition: all 0.3s;
     margin: 0 auto;
+    cursor: pointer;
 }
 #react-img:hover {
     -webkit-animation:spin 2s linear infinite;
     -moz-animation:spin 2s linear infinite;
     animation:spin 2s linear infinite;
+}
+
+
+
+/************************
+project
+************************/
+
+/************
+card styling
+*************/
+.card {
+    display: flex;
+    align-content: flex-end;
+}
+
+.card-links {
+    /*position: absolute;*/
+    /*bottom: 0;*/
+}
+
+
+/************************
+case studies
+************************/
+.case-studies {
+    padding-bottom: 5vh;
+}
+
+
+/************************
+Contact Me
+************************/
+.contact-me-container {
+    padding: 5vh 0;
+
+}
+
+.contact-text {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center ;
+}
+.contact-text p {
+    margin-bottom: 0;
+}
+
+.contact-button-container {
+    display: flex;
+    justify-content: flex-start;
 }
 
 /************************
