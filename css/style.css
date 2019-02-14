@@ -109,6 +109,7 @@ Intro Header
 
 
 
+
 /************************
 About
 ************************/
@@ -177,7 +178,9 @@ Logo Images
     align-items: center;
     justify-content: center;
     height: 150px;
+    transition: all 0.5s ease;
 }
+
 /*****
 HTML
 *****/
