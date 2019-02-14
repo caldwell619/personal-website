@@ -17,7 +17,7 @@ $('.mobile-menu-icon').on( "click", function (){
 //////////////////////////////////////////////////////////////////////////////////////////
 
 //leaves card
-var dropDowns = [$(".html-dropdown"), $(".css-dropdown"), $(".js-dropdown"), $('.react-dropdown')];
+let dropDowns = [$(".html-dropdown"), $(".css-dropdown"), $(".js-dropdown"), $('.react-dropdown'), $('#java-card')];
 
 //HTML toggle
 dropDowns[0].on("click", function() {
@@ -30,7 +30,6 @@ dropDowns[0].on("click", function() {
 dropDowns[1].on("click", function(){
     dropDowns[0].fadeToggle();
     dropDowns[2].fadeToggle();
-    // dropDowns[3].fadeToggle();
     $(".css-text").slideToggle();
 });
 
@@ -38,15 +37,15 @@ dropDowns[1].on("click", function(){
 dropDowns[2].on("click", function(){
     dropDowns[0].fadeToggle();
     dropDowns[1].fadeToggle();
-    // dropDowns[3].fadeToggle();
     $(".js-text").slideToggle();
 });
 
 //React Toggle
 $('.react-dropdown').on("click", function(){
-    // dropDowns[0].fadeToggle();
-    // dropDowns[1].fadeToggle();
-    // dropDowns[2].fadeToggle();
+    dropDowns[0].fadeToggle();
+    dropDowns[1].fadeToggle();
+    dropDowns[2].fadeToggle();
+    dropDowns[4].fadeToggle();
     $(".react-text").slideToggle();
 });
 

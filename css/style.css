@@ -138,6 +138,7 @@ Projects
 ************************/
 .projects {
     background-color: #79abd3;
+    height: 90vh;
 }
 .project-header {
     color: rgb(221, 237, 221);
@@ -153,6 +154,18 @@ Projects
 }
 .card-text {
     font-size: 16px;
+}
+
+
+/************************
+Case Studies
+************************/
+.case-studies {
+    height: 100vh;
+}
+.case-study-header {
+    text-align: center;
+    margin: 5vh 0 10vh;
 }
 
 
@@ -218,8 +231,8 @@ card styling
 }
 
 .card-links {
-    /*position: absolute;*/
-    /*bottom: 0;*/
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
