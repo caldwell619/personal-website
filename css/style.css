@@ -27,12 +27,59 @@ Body
 /************************
 Mobile Nav Bar
 ************************/
-.collapsible-nav-links {
-    display: none;
+.mobile-navigation-links {
+    position: fixed;
+    left: 0;
+    width: 0;
+    background-color: gray;
+    padding: 100px 0;
+    border-radius: 10px;
+    transition: all 0.4s ease-in;
+    opacity: 0;
+    z-index: 99;
 }
+.navigation-links a {
+    pointer-events: none;
+}
+.link-collapse {
+    opacity: 1;
+    width: 40%;
+}
+.link-collapse a {
+    pointer-events: all;
+}
+.mobile-navigation-links li {
+    margin: 40px 20px;
+}
+.menu-toggle {
+    color: white;
+    position: fixed;
+    top: 13px;
+    left: 7px;
+    font-size: 50px;
+    z-index: 100;
+    background-color: rgba(52, 52, 52, 0.53);
+    border-radius: 8px;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .about-intro {
     text-align: center;
     margin-bottom: 5vh;
+}
+.mobile-menu-icon {
+    position: absolute;
+    top: 10px;
+    background-color: transparent;
+}
+.mobile-navigation-links li a {
+    color: rgb(210, 230, 210);
+    font-size: 130%;
+    margin: 0 10px;
 }
 
 .intro {
@@ -44,31 +91,35 @@ Mobile Nav Bar
     justify-content: center;
 }
 
-.navigation-links li {
-    display: inline-block;
-}
-
-
-
 
 /************************
 Medium Nav
 ************************/
 .medium-nav {
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
-
+    height: 30px;
 }
+
 .navigation-links-container {
-    margin-top: 30px;
+    height: 30px;
+}
+.navigation-links li {
+    display: inline-block;
+    margin: 20px 40px;
+    transition: all 0.3s ease-in-out;
+}
+.navigation-links li a {
+    padding-bottom: 7px;
+    color: rgb(210, 230, 210);
+}
+.navigation-links li:hover {
+    border-bottom: 1px solid rgb(210, 230, 210);
 }
 
-.navigation-links li a {
-    color: rgb(210, 230, 210);
-    font-size: 130%;
-    margin: 0 30px;
-}
+
 .button-container {
     display: flex;
     justify-content: space-evenly;
@@ -130,6 +181,8 @@ About
 }
 .language-text {
     padding-bottom: 10vh;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 
@@ -138,21 +191,22 @@ About
 Projects
 ************************/
 .projects {
-    background-color: #79abd3;
-    height: 90vh;
+    background-color: #8c7b6d;
+    height: 170vh;
+    /*padding-bottom: 1400px;*/
 }
 .project-header {
     color: rgb(221, 237, 221);
 }
 .project-header-container {
-    padding-top: 5vh;
+    padding: 5vh 5%;
     display: flex;
     justify-content: center;
 }
-.card {
-    border-radius: 8px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+.project-display-container {
+    padding: 0 5%;
 }
+
 .card-text {
     font-size: 16px;
 }
@@ -181,6 +235,12 @@ Logo Images
     transition: all 0.5s ease;
 }
 
+.lang-body {
+    transition: all 0.3s ease-in-out;
+}
+.hidden {
+    opacity: 0;
+}
 /*****
 HTML
 *****/
@@ -203,6 +263,7 @@ HTML
 /*****
 React
 *****/
+
 #react-img {
     height: 150px;
     margin:-60px 0 0 -60px;
@@ -218,6 +279,10 @@ React
     -moz-animation:spin 2s linear infinite;
     animation:spin 2s linear infinite;
 }
+/*****
+Java
+*****/
+
 
 
 
@@ -231,11 +296,35 @@ card styling
 .card {
     display: flex;
     align-content: flex-end;
+    position: relative;
+    padding-bottom: 100px;
+    border-radius: 8px;
+    margin: 25px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+.span-1-of-4 {
+    width: 100%;
+}
+.card-body {
+
 }
 
 .card-links {
     display: flex;
     justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin-top: 2%;
+}
+.card-img-top {
+    height: 100px;
+    width: 140px;
+}
+.img-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -250,29 +339,22 @@ case studies
 /************************
 Contact Me
 ************************/
-.contact-me-container {
-    padding: 5vh 0;
-
+.resume-btn {
+    margin-left: 15px;
+    background-color: transparent;
+    border: 3px solid gray;
 }
 
-.contact-text {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center ;
-}
-.contact-text p {
-    margin-bottom: 0;
-}
-
-.contact-button-container {
-    display: flex;
-    justify-content: flex-start;
-}
 
 /************************
 Media Queries
 ************************/
+
+
 @media screen and (min-width: 540px){
+    .medium-nav {
+        display: block;
+    }
     .mobile {
         display: none;
     }
