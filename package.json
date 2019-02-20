@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/caldwell619/personal-website#readme",
   "dependencies": {
+    "express": "^4.16.4",
     "nodemon": "^1.18.10"
   }
 }
