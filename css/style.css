@@ -13,7 +13,10 @@ ul {
 
 li { list-style: none; }
 
-a {text-decoration: none}
+a {
+    text-decoration: none;
+    border: none;
+}
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
@@ -38,16 +41,11 @@ Mobile Nav Bar
     opacity: 0;
     z-index: 99;
 }
-.navigation-links a {
-    pointer-events: none;
-}
 .link-collapse {
     opacity: 1;
     width: 40%;
 }
-.link-collapse a {
-    pointer-events: all;
-}
+
 .mobile-navigation-links li {
     margin: 40px 20px;
 }
@@ -114,6 +112,7 @@ Medium Nav
 .navigation-links li a {
     padding-bottom: 7px;
     color: rgb(210, 230, 210);
+    transition: all 0.3s ease-in-out;
 }
 .navigation-links li:hover {
     border-bottom: 1px solid rgb(210, 230, 210);
@@ -131,7 +130,6 @@ Medium Nav
 .btn-primary {
     transition: all 0.6s;
 }
-.btn-primary:hover
 
 .btn-primary:active {
     transform: scale(.9);
@@ -315,7 +313,6 @@ card styling
     position: absolute;
     width: 100%;
     bottom: 0;
-    margin-top: 2%;
 }
 .card-img-top {
     height: 100px;
@@ -325,6 +322,8 @@ card styling
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 120px;
 }
 
 
@@ -357,6 +356,14 @@ Media Queries
     }
     .mobile {
         display: none;
+    }
+}
+@media screen and (min-width: 700px){
+    .span-1-of-4 {
+        width: 28%;
+    }
+    .projects {
+        height: 100vh;
     }
 }
 
