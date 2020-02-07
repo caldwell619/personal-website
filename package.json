@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "core-js": "^3.4.4",
-    "node-sass": "^4.13.1",
     "vue": "^2.6.10",
     "vuetify": "^2.1.0"
   },
@@ -21,6 +20,9 @@
     "babel-eslint": "^10.0.3",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.13.1",
+    "pug": "^2.0.4",
+    "pug-plain-loader": "^1.0.0",
     "sass": "^1.19.0",
     "sass-loader": "^8.0.0",
     "vue-cli-plugin-vuetify": "^2.0.4",
