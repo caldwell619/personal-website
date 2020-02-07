@@ -3,7 +3,8 @@
   .container
     #about-me.about-intro
       h3 Just like every other developer, I know the basics well.
-      br Click something shiny below to see why I'm different
+      br
+      div Click something shiny below to see why I'm different
     .row.language-card-container
       #react-card.col.span-1-of-2.lang-body
         h5.name-header.react-dropdown React
