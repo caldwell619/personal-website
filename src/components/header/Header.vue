@@ -89,8 +89,11 @@ export default {
     height: 40px
     width: 130px
     position: absolute
-    bottom: 5%
+    bottom: 15%
     right: 4%
+    @media screen and (min-width: 786px)
+      bottom: 5%
+      right: 4%
   .internal-drawer-container
     height: 100%
   #menu-badge

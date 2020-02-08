@@ -44,7 +44,6 @@ export default {
       } else {
         this.snackbarText = 'Oops. Something went wrong'
         this.colorOfSnackBar = 'error'
-        console.log('was not successful')
       }
       setTimeout(() => {
         this.isSnackBarShown = false
