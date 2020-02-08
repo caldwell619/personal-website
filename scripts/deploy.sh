@@ -15,3 +15,6 @@ aws s3 sync \
   ./dist/ \
   s3://$S3_BUCKET
   
+aws s3 cp \
+  ./docs/christopher-caldwell-resume.pdf \
+  s3://$S3_BUCKET

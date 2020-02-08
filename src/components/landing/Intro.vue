@@ -2,25 +2,33 @@
   v-container.intro
     v-container
       v-row
-        h1.light-text Establish Your Virtual Identity
-      v-row
+        h1.light-text.headliner Establish Your Virtual Identity
+      v-row.intro-text
         p.light-text.
           Hello! I'm Christopher Caldwell, a Software Developer based in San
           Antonio, TX.
-          #[br] 
-          My passion is to bring your ideas to life online. Let's make it happen
+        p.light-text My passion is to bring your ideas to life online. Let's make it happen
+         
       v-row
         v-col
-          v-btn(text dark).
-            #[a(href="https://drive.google.com/open?id=1FsCgfEbrV9FObTWRe6yTlhVo8sbLc-dr")] Find out more
+          v-btn(text dark @click="scrollTo") Find out more
         v-col
-          v-btn.primary(dark).
-            #[a(href="https://drive.google.com/open?id=1FsCgfEbrV9FObTWRe6yTlhVo8sbLc-dr")] Resume
+          v-btn.primary(dark)
+            a(href='/christopher-caldwell-resume.pdf').light-text Resume
 </template>
 
 <script>
 export default {
-
+  name: 'Intro',
+  methods: {
+    scrollTo(){
+      window.scrollTo({
+        top: 100,
+        left: 100,
+        behavior: 'smooth'
+      })
+    }
+  }
 }
 </script>
 
@@ -29,7 +37,9 @@ export default {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.73)), url("../../assets/images/matrix.jpg")
   background-size: cover
   height: 95vh
-  display: flex
-  align-items: center
-  justify-content: center
+.headliner
+  margin-top: 30%
+  margin-bottom: 35%
+.intro-text
+  margin-top: 15%
 </style>

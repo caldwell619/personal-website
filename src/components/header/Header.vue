@@ -14,17 +14,17 @@
           li
             a(href="mailto:caldwell8814@gmail.com") Connect
     header(v-else)
-      v-row
-        v-col.navigation-links-container
-          ul.navigation-links
-            li
-              a(href="#about-me") About
-            li
-              a(href="#about-me") About
-            li
-              a(href="#projects") Projects
-            li
-              a(href="mailto:caldwell8814@gmail.com") Connect
+      //- v-row
+      //-   v-col.navigation-links-container
+      //-     ul.navigation-links
+      //-       li
+      //-         a(href="#about-me") About
+      //-       li
+      //-         a(href="#about-me") About
+      //-       li
+      //-         a(href="#projects") Projects
+      //-       li
+      //-         a(href="mailto:caldwell8814@gmail.com") Connect
 </template>
 
 <script>
