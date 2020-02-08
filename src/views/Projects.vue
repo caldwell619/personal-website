@@ -9,7 +9,7 @@
             h5.card-title Star Wars: Armada Deck Builder
             p.card-text MERN Stack web application for building and saving fleets.
             .img-cont
-              img.card-img-top(src='images/armada-screen.png' alt='preview')
+              img.card-img-top(:src="require('@/assets/images/armada-screen.png')" alt='preview')
           .card-body.card-links
             a.card-link(href='https://muster-the-fleet.herokuapp.com/' target='_blank') Hosted
             a.card-link(href='https://github.com/caldwell619/armada-builder-react' target='_blank') Github
@@ -20,7 +20,7 @@
               | Fine art portfolio commerce site for an award winning photographer based in
               | Louisiana
             .img-cont
-              img.card-img-top(src='images/photo-screen.png' alt='preview')
+              img.card-img-top(:src="require('@/assets/images/photo-screen.png')" alt='preview')
           .card-body.card-links
             a.card-link(href='https://github.com/caldwell619/neal-hollimon-photography') Github
         .card.span-1-of-4

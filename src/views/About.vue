@@ -2,19 +2,22 @@
 .about
   .container
     #about-me.about-intro
-      h3 Just like every other developer, I know the basics well.
+      h2 Just like every other developer, I know the basics well.
       br
       div Click something shiny below to see why I'm different
     .row.language-card-container
       #react-card.col.span-1-of-2.lang-body
         h5.name-header.react-dropdown React
         #react-container.logo-container.react-dropdown
-          img#react-img(src='images/react.png' alt='react-js')
+          v-img(
+            :src="require('@/assets/images/react.png')"
+            aspect-ratio="1.7"
+          )
       #java-card.col.span-1-of-2.lang-body
         div
           h5.name-header.java-dropdown Java
           .logo-container
-            img.language-logo(src='images/java.gif' alt='java')
+            v-img.language-logo(:src="require('@/assets/images/java.gif')" alt='java')
         .language-text.java-text
           p I wish I knew anything about Java
           ul
@@ -31,15 +34,15 @@
       #html-card.col.span-1-of-4.lang-body
         h5.name-header.html-dropdown HTML
         .logo-container.html-dropdown
-          img#html-img.language-logo(src='images/html.png' alt='html')
+          v-img#html-img.language-logo(:src="require('@/assets/images/html.png')" alt='html')
       #css-card.col.span-1-of-4.lang-body
         h5.name-header.css-dropdown CSS
         .logo-container.css-dropdown
-          img#css-img.language-logo(src='images/css.png' alt='css')
+          v-img#css-img.language-logo(:src="require('@/assets/images/css.png')" alt='css')
       #js-card.col.span-1-of-4.lang-body
         h5.name-header.js-dropdown JavaScript
         .logo-container.js-dropdown
-          img#js-img.language-logo(src='images/js.png' alt='js')
+          v-img#js-img.language-logo(:src="require('@/assets/images/js.png')" alt='js')
     .row
       .language-text.html-text
         h4 The skeleton of any website
