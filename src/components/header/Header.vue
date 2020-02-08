@@ -15,7 +15,7 @@
         )
     span.menu-toggle(:class="menuActivatorClassName" @click.stop="drawer = !drawer")
         v-btn(icon)
-          v-icon {{ menuActivatorIconName }}
+          v-icon.light-text {{ menuActivatorIconName }}
 </template>
 
 <script>
@@ -60,7 +60,8 @@ export default {
       this.isDarkMode = isDarkMode
       this.$vuetify.theme.dark = isDarkMode
     } catch (error) {
-      // it's fine, theres no previous dark mode setting
+      // setting it to true if not previusly set
+      this.$vuetify.theme.dark = true
     }
   }
 }

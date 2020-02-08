@@ -25,5 +25,27 @@ export const contactInfo = [
     icon: 'mdi-linkedin-box',
     type: 'linkedin'
   },
+]
 
+export const skills = [
+  {
+    title: 'React',
+    imageUrl: 'react.png'
+  },
+  {
+    title: 'Vue',
+    imageUrl: 'vue.png'
+  },
+  {
+    title: 'AWS',
+    imageUrl: 'aws.png'
+  },
+  {
+    title: 'Docker',
+    imageUrl: 'docker.png'
+  },
+  {
+    title: 'Node',
+    imageUrl: 'node.png'
+  },
 ]

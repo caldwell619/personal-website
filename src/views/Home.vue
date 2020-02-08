@@ -33,4 +33,5 @@ export default {
   margin-bottom: 30%
 .intro-text
   margin-top: 15%
+
 </style>
