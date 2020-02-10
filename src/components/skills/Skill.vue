@@ -1,15 +1,24 @@
 <template lang='pug'>
   v-col(cols='6')
-    v-row(justify='center')
-      v-col(align='center' cols='5')
-        h3 {{ title }}
-    v-row(justify='center')
-      v-col(cols='10')
-        v-img(
-          max-height='200px'
-          :alt="title"
-          :src="require(`@/assets/images/${imageUrl}`)"
-          )
+    v-expansion-panel
+      v-expansion-panel-header(expand-icon="")
+        template(v-slot:default="{ open }")
+          v-col
+            v-row(justify='center')
+              v-col(align='center' cols='5')
+                h3 {{ title }}
+            v-row(justify='center')
+              v-col(cols='10')
+                v-img(
+                  :id="`${title.toLowerCase()}-img`"
+                  max-height='200px'
+                  :alt="title"
+                  :src="require(`@/assets/images/${imageUrl}`)"
+                  )
+      v-expansion-panel-content
+        v-container 
+          v-row
+            v-col Hey
 </template>
 
 <script>
@@ -28,6 +37,5 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang='sass'>
 </style>

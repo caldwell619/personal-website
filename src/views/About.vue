@@ -1,16 +1,15 @@
 <template lang="pug">
   v-container.about
     v-row
-      v-col
-        h2 Just like every other developer, I know the basics well.
+      v-col.about-header
+        h2 My skills, in order of confidence
     v-row
-      Skill(
-        v-for="skill in skills" 
-        :title="skill.title" 
-        :imageUrl="skill.imageUrl"
-      )
-        
-    
+      v-expansion-panels(tile flat)
+        Skill(
+          v-for="skill in skills" 
+          :title="skill.title" 
+          :imageUrl="skill.imageUrl"
+        )
 </template>
 
 <script>
@@ -34,4 +33,12 @@ export default {
   background-color: #343434
   color: rgb(210, 230, 210)
   padding-bottom: 5vh
+.about-header
+  margin-top: 15%
+  margin-left: 5%
+.v-expansion-panel
+  background-color: transparent !important
+  box-shadow: none !important
+  &::before
+    position: relative !important
 </style>
