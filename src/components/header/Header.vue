@@ -10,7 +10,7 @@
           v-model="isDarkMode"
           @change="saveDarkModeSetting"
           label='Dark Mode'
-          color='red'
+          color='#4CAF50'
           hide-details
         )
     span.menu-toggle(:class="menuActivatorClassName" @click.stop="drawer = !drawer")

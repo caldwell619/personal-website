@@ -37,6 +37,22 @@ export const skills = [
     ]
   },
   {
+    title: 'Lambda',
+    imageUrl: 'lambda.png',
+    description: '',
+    bullets: [
+
+    ]
+  },
+  {
+    title: 'DynamoDB',
+    imageUrl: 'dynamo.png',
+    description: '',
+    bullets: [
+
+    ]
+  },
+  {
     title: 'Vue',
     imageUrl: 'vue.png'
   },

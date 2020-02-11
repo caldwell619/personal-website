@@ -5,13 +5,13 @@
         template(v-slot:default="{ open }")
           v-col
             v-row(justify='center')
-              v-col(align='center' cols='5')
+              v-col(align='center')
                 h3 {{ title }}
             v-row(justify='center')
               v-col(cols='10')
                 v-img(
                   :id="`${title.toLowerCase()}-img`"
-                  max-height='200px'
+                  max-height='400px'
                   :alt="title"
                   :src="require(`@/assets/images/${imageUrl}`)"
                   )
