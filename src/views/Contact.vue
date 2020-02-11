@@ -1,8 +1,8 @@
 <template lang='pug'>
-  v-container.contact-container
+  v-container
     v-row
-      v-col.title-col
-        h1 Contact Information
+      v-col
+        h1.title-header Contact Information
     v-row
       v-col
         v-divider
@@ -58,6 +58,6 @@ export default {
 .title-col
   margin-left: 3%
 .contact-container
-  margin-top: 20%
+  margin-top: 15%
 
 </style>

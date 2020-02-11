@@ -2,7 +2,7 @@
   div
     v-navigation-drawer(v-model="drawer" app clipped width='250px')
       v-list.internal-drawer-container.listing-listy.list(dense)
-        v-subheader Home
+        v-subheader Christopher Caldwell
         v-divider
         NavMenuItem(v-for="(route, index) in routes" :key="index" :route="route")
       div.find-me

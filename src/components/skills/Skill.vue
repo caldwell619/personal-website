@@ -11,7 +11,7 @@
               v-col(cols='10')
                 v-img(
                   :id="`${title.toLowerCase()}-img`"
-                  max-height='400px'
+                  max-height='100px'
                   :alt="title"
                   :src="require(`@/assets/images/${imageUrl}`)"
                   )

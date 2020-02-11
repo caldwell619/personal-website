@@ -2,7 +2,7 @@
   v-container
     v-row
       v-col
-        h2#projects-header See for yourself what I can bring to your project
+        h2.title-header See for yourself what I can bring to your project
     v-row
       v-col
         v-divider
@@ -33,6 +33,6 @@ export default {
 </script>
 
 <style lang='sass'>
-  #projects-header
-    margin-top: 15%
+#projects-header
+  margin-top: 15%
 </style>

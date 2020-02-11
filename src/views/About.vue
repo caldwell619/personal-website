@@ -1,8 +1,13 @@
 <template lang="pug">
   v-container.about
     v-row
-      v-col.about-header
-        h2 My skills, in order of confidence
+      v-col
+        h2.title-header My skills, in order of confidence
+    v-row
+      v-col
+        v-divider
+    v-row
+      v-col 
     v-row
       v-expansion-panels(tile flat)
         Skill(
