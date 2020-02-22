@@ -2,7 +2,7 @@
   v-container.about
     v-row
       v-col
-        h2.title-header My skills, in order of confidence
+        h2.title-header Areas that I can bring immediate value
     v-row
       v-col
         v-divider
@@ -34,10 +34,6 @@ export default {
 </script>
 
 <style lang='sass'>
-.about
-  background-color: #343434
-  color: rgb(210, 230, 210)
-  padding-bottom: 5vh
 .about-header
   margin-top: 15%
   margin-left: 5%

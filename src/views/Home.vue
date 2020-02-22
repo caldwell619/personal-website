@@ -11,7 +11,8 @@
          
       v-row
         v-col
-          v-btn(text dark) Find out more
+          router-link(to='/about')
+            v-btn(text dark) Find out more
         v-col
           v-btn.primary-button(dark)
             a(href='/christopher-caldwell-resume.pdf' target="_blank").light-text Resume
