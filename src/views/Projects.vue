@@ -2,7 +2,7 @@
   v-container
     v-row
       v-col
-        h2.title-header See for yourself what I can bring to your project
+        h2.title-header Projects
     v-row
       v-col
         v-divider

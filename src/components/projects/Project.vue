@@ -2,34 +2,40 @@
   v-col
     v-card(
       class="mx-auto"
-      max-width="375"
+      max-width="345"
     )
       v-img(
-        class="white--text align-end"
-        height="100px"
-        src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+        height="120px"
+        :src="require(`@/assets/images/${project.imageUrl}`)"
+        position='top'
+        @load="finishLoading"
       )
-        v-card-title {{ project.title }}
-      v-card-subtitle.pb-0Number {{ project.type }}
-      card-text.text--primary
-        div
-          v-col
-            div {{ project.description }}
-      v-card-actions
+        template(name='placeholder')
+          v-skeleton-loader(
+            v-if="!imageDoneLoading"
+            class="mx-auto"
+            width="345"
+            max-height='130px'
+            type="image"
+          )
+      v-container
         v-row
-          v-col(align='end')
+          v-col
+            h3.card-header {{ project.title }}
+        v-row(align='center')
+          v-col.card-header-left {{ project.type }}
+          v-col(v-if="project.hostedUrl" cols=2 align='center')
+            a(:href="project.hostedUrl" target="_blank" rel="noopener")
+              v-icon(:color="greenColor") {{ project.icon || 'mdi-earth' }}
+          v-col(cols=2 align='center')
             a(:href="project.githubUrl" target="_blank" rel="noopener")
-              v-btn( text ) GitHub
-            a(
-              :href="project.githubUrl" 
-              target="_blank" 
-              rel="noopener"
-              v-if="project.hasHostedVersion"
-            ) 
-              v-btn( text ) Hosted
+              v-icon(:color="greenColor") mdi-github-circle
+        v-row(justify='center')
+          v-col.text--primary {{ project.description }}
 </template>
 
 <script>
+import { greenColor } from '@/data/constants'
 export default {
   name: 'Project',
   props: {
@@ -38,9 +44,21 @@ export default {
       required: true
     }
   },
+  data(){
+    return {
+      greenColor,
+      imageDoneLoading: false
+    }
+  },
+  methods: {
+    finishLoading(){
+      this.imageDoneLoading = true
+    }
+  }
 }
 </script>
 
-<style>
-
+<style lang='sass'>
+.card-header
+  margin-top: 6%
 </style>

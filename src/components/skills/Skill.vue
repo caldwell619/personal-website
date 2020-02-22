@@ -1,9 +1,9 @@
 <template lang='pug'>
   v-col(cols='6')
     v-expansion-panel
-      v-expansion-panel-header(expand-icon="")
+      v-expansion-panel-header.no-padding(expand-icon="")
         template(v-slot:default="{ open }")
-          v-col
+          v-col.no-padding
             v-row(justify='center')
               v-col(align='center')
                 h3 {{ title }}
@@ -11,7 +11,8 @@
               v-col(cols='10')
                 v-img(
                   :id="`${title.toLowerCase()}-img`"
-                  max-height='100px'
+                  height='50px'
+                  contain
                   :alt="title"
                   :src="require(`@/assets/images/${imageUrl}`)"
                   )
