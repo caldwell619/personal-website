@@ -10,6 +10,11 @@ export const routes = [
     title: 'Get to know me',
   },
   {
+    path: '/skills',
+    icon: 'mdi-xml',
+    title: 'Technical skills',
+  },
+  {
     path: '/projects',
     icon: 'mdi-gamepad-variant',
     title: 'Projects',
