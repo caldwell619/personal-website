@@ -76,6 +76,7 @@ export const projects = [
     type: 'Chrome Extension',
     description: 'Always have the things you copy paste handy, syncs with your google account so you\'ll never lose your stored copy / pastes.',
     githubUrl: 'https://github.com/caldwell619/copy-paste',
+    hostedUrl: 'https://chrome.google.com/webstore/detail/ommfligmacnpbcgdcngiihnidllbbicj/publish-accepted?authuser=1&hl=en',
     imageUrl: 'copy-to-clip-board.png',
     icon: 'mdi-google-chrome'
   },
